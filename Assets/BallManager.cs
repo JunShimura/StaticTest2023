@@ -6,7 +6,7 @@ public class BallManager : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]
-    Transform ballInstance;
+    BoundCountAll ballInstance;
     [SerializeField]
     Vector3 ballStart=new Vector3 (-5,0,0);
     [SerializeField]
@@ -35,7 +35,7 @@ public class BallManager : MonoBehaviour
     {
         if (Input.GetMouseButton(1))
         {
-            Debug.Log($"BALL MANAGER countAll={BoundCountAll.countAll}");
+            Debug.Log($"BALL MANAGER countAll={ballInstance.CountAll()}");
         } 
     }
 }
